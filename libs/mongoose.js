@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var log = require('./log')(module);
 var config = require('./config');
 
-mongoose.connect(config.get('mongoose:uri'));
+mongoose.connect(config.get('mongoose:uri'),{ useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
 
 db.on('error', function (err) {

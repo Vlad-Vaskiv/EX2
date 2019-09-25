@@ -1,6 +1,6 @@
 {
     "port" : 1337,
     "mongoose": {
-        "uri": "mongodb://localhost/articlesdb"
+        "uri": "mongodb://localhost/newdb"
     }
 }
